@@ -1,0 +1,2 @@
+The method reference Math::random is equivalent to the lambda expression:
+() -> Math.random()

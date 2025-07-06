@@ -1,0 +1,7 @@
+i) Runnable lambda
+Parameters: It has no parameter
+Free variables: s and t are free variables
+
+ii) Comparator lambda
+Parameters: s and t
+Free variables: ignoreCase

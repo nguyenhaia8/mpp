@@ -3,3 +3,22 @@ tracker.get(e).setVisited(true);
 
 so this thing make Employee object modified, and break the hash map behavior
 we need to track visited status separately
+
+We update removeDuplicates() like this:
+
+public static List<Employee> removeDuplicates(List<Employee> employees) {
+    HashMap<Employee, Employee> tracker = new HashMap<>();
+    HashMap<Employee, Boolean> visitedMap = new HashMap<>();
+    List<Employee> noDupsList = new ArrayList<>();
+    for(int i = 0; i < employees.size(); ++i) {
+        Employee e = employees.get(i);
+        if(!tracker.containsKey(e)) {
+            tracker.put(e, e);
+            noDupsList.add(e);
+            visitedMap.put(e, false);
+        } else {
+            visitedMap.put(e, true);
+        }
+    }
+    return noDupsList;
+}
