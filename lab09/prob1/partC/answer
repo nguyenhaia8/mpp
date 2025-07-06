@@ -1,0 +1,6 @@
+In this case, we use HashMap to detect duplicate, but we missing override hashcode in Employee class
+We need to override hashcode like this:
+    @Override
+	public int hashCode() {
+		return Objects.hash(name, salary);
+	}

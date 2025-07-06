@@ -1,0 +1,5 @@
+In the removeDuplicates() method, when a duplicate is found, the code does
+tracker.get(e).setVisited(true);
+
+so this thing make Employee object modified, and break the hash map behavior
+we need to track visited status separately

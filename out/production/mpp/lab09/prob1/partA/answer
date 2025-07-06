@@ -1,0 +1,8 @@
+ArrayList extend from AbstractList<E>
+ArrayList implements from
+- List<E>
+- RandomAccess
+- Cloneable
+- Serializable
+- Iterable<E>
+- Collection<E>

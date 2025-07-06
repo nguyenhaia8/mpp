@@ -1,0 +1,10 @@
+i) In java, a class can inherit from only one superclass. This means that if D is a class and tries to
+inherit from both B and C, where B and C both inherit from A, the compiler will issue an error. Because java
+does not support multiple inheritance for classes
+
+ii)
+Java allows a class implement multiple interface. If D implements interface B and C, and both B and C
+have a default method with same signature, then D must resolve conflict. Java 8 provides the default
+keyword for interfaces, allowing them to provide method implementations. To resolve it, Java require
+D to explicit override the method and use super.methodName() to specify which interface's implementation
+want to use.
