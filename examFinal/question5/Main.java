@@ -13,6 +13,7 @@ public class Main {
 
         //B
         BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+        System.out.println(add.apply(1, 2));
 
 
         // D
