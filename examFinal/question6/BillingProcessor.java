@@ -14,7 +14,7 @@ public interface BillingProcessor {
     }
 
     static boolean validateInsuranceId(String insuranceId) {
-        return insuranceId.matches("^[0-9]{10}$");
+        return insuranceId.matches("^[a-zA-Z0-9]*$");
     }
 
     static boolean validatePatientId(String insuranceName) {
