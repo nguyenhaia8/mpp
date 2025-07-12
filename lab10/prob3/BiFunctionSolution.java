@@ -16,5 +16,7 @@ public class BiFunctionSolution {
 
         List<Double> result = powerAndMultiply.apply(2.0, 3.0);
         System.out.println(result);
+
+
     }
 }
