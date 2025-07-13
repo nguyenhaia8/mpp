@@ -1,0 +1,9 @@
+a)
+The compiler error occurs on the last line nums.add(3.14).
+When we declare a List<? extends Number>, it means it's a list of some specific but
+unknown subtype of Number. Therefore, we cannot add anything to it (except null)
+because the compiler can't guarantee type safety.
+
+b)
+The compiler error occurs on the last line double dbl = sum(ints). The sum method
+expects a Collection<? extends Number>, but ints is of type List<? super Integer>.

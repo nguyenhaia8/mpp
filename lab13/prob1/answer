@@ -1,0 +1,11 @@
+a)
+The compiler error occurs on the line List<Number> nums = ints;
+Reason: Although Integer is a subclass of Number, List<Integer> is not a subclass of List<Number>.
+Java generics are invariant, meaning that even if Integer is a subtype of Number, List<Integer> is
+not a subtype of List<Number>. This is to prevent type safety issues
+
+b)
+The compiler error occurs on the line nums.add(3.14);
+List<? extends Number> means this is a list of some specific but unknown type that extends Number
+Therefore, we cannot add anything (except null) to a List<? extends Number>.
+This is a feature of Java's wildcard generics to ensure type safety.
